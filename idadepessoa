@@ -1,0 +1,15 @@
+# mostre-a expressa em anos, meses e dias.
+
+input = int(input('Insira sua idade: '))
+
+anos= input
+
+
+meses = input * 12
+
+
+dias = input*365
+
+print (str(anos) + " anos e total de meses = "+  str(meses)
+       + " meses e total de dias vivido = " + str(dias) + " dias. "  )
+
