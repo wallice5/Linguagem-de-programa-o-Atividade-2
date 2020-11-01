@@ -1,0 +1,26 @@
+# Programa que lê 3 valores a,b,c e verifica se eles formam
+#ou não um triângulo. Supor que os valores lidos são inteiros e positivos. Caso
+#os valores formem um triângulo, calcular e escrever a área deste triângulo. Se
+#não formam triângulo escrever os valores lidos. (Se a &gt; b + c não formam
+#triângulo algum, se a é o maior).
+
+#! /usr/bin/python3.9
+
+from math import *
+try:
+	 a = int(input(" a: "))
+	 b = int(input(" b: "))
+	 c = int(input(" c: "))
+except:
+        print("\nDigite apenas inteiros!")
+        input()
+if (a > (b + c)):
+        print("\nNão é um triangulo!")
+elif (b > 0 and c > 0):
+        print("\nÉ um triangulo")
+
+        s=(a + b + c)/2
+
+        area=sqrt(s*(s-a)*(s-b)*(s*c))
+
+        print("Área do triângulo: {:.2f} ".format(area))
